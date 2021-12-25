@@ -1,0 +1,67 @@
+<div class="banner">
+    <h1>Best Photography Blogs</h1>
+    <!-- <div class="link">
+        <a routerLink="blog">Read Blogs<i class="bi bi-arrow-right"></i></a>
+    </div>
+     -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="/assets/background_video.mp4" type="video/mp4">
+        </video>
+    </div>            
+</div>
+
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">Discover all types of <span class="highlight">Photography</span></h1>
+    <div class="row mt-5">
+                <!-- one  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <a style="text-decoration: none;" routerLink="wildlife" routerLinkActive="active-link" ><h1>Wildlife Photograph</h1></a>
+                
+            </div>
+        </div>
+                <!-- two -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <a  style="text-decoration: none;" routerLink="landscape" routerLinkActive="active-link"><h1>Lifestyle Photography</h1></a>
+                
+            </div>
+        </div>
+                <!-- three  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <a style="text-decoration: none;" routerLink="wedding" routerLinkActive="active-link" ><h1>Wedding Photography</h1></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- blog box -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center ">Popular <span class="highlight">Blogs</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor = "let bd of Blogtypes;index as i">
+            <div class="Blogbox" *ngIf="i<=3">
+                <img src="{{bd.blogImg}}" />
+                <h1>{{bd.blogName}}</h1>
+                
+            </div>
+        </div>
+    </div>
+    <a routerLink="blog" class="viewmorebtn">view more</a>
+</div>
+<ul class="pagination justify-content-center">
+    <li class="prev page-item"><a class="page-link" routerLink="">Previous</a></li>
+    <li class="page-item"><a class="page-link" routerLink="">1</a></li>
+    <li class="page-item"><a class="page-link" routerLink="blog">2</a></li>
+    <li class="page-item "><a class="page-link" routerLink="about">3</a></li>
+    <li class="page-item "><a class="page-link" routerLink="contact">4</a></li>
+    <li class="page-item "><a class="page-link" routerLink="users">5</a></li>
+    <li class="page-item "><a class="page-link" routerLink="ourteam">6</a></li>
+    <li class=" next page-item"><a class="page-link" routerLink="blog">Next</a></li>
+</ul>
+
+
+ 

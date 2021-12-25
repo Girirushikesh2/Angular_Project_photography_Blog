@@ -1,0 +1,38 @@
+.Blogbox{
+    padding: 10px 10px;
+}
+.Blogbox img{
+    width:100%;
+    height: 250px;
+    Object-fit:cover;
+    border-radius: 5px;
+}
+
+.Blogbox h1{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.stepBox h1{
+    font-size: 35px;
+
+}
+
+.viewbtn{
+    text-decoration: none;
+    background-color: #5CDB95;
+    color: #EDF5E1;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+img{
+    width: 25%;
+    height: 200px;
+    margin: 7px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.4), 0 0 10px 0 rgba(0,0,0,0.35);
+}

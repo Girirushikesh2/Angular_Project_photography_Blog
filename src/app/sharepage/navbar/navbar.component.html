@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">RG Photography Blogs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="blog" routerLinkActive="active-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <div class="menu">
+              <button class="btn" >Gallery</button>
+              <div class="menu-content">
+                  <a class="nav-link" routerLink="wildlife" routerLinkActive="active-link" >Wildlife Photography</a>
+                  <a class="nav-link" routerLink="wedding" routerLinkActive="active-link" >Wedding Photography</a>
+                  <a class="nav-link" routerLink="landscape" routerLinkActive="active-link">Landscape Photography</a>
+              </div>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="users" routerLinkActive="active-link">User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="ourteam" routerLinkActive="active-link">Our Team</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>

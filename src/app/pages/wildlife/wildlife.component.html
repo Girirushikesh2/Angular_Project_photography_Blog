@@ -1,0 +1,32 @@
+
+
+<div>
+    <h1>Wildlife Photo Gallery</h1>
+
+</div>
+
+<div class="grid">
+    <div class="onclick"  *ngFor="let image of wildlifeimgs; let i=index">
+        <div > 
+            <img [src]="image.thumb" (click)="open(i)">
+        </div>
+    </div>
+
+    <div  *ngFor="let image1 of wildlifeimgs.slice(10,20);">
+        <div > 
+            <img [src]="image1.thumb">  
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+

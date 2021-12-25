@@ -1,0 +1,16 @@
+<h1>Landscape Photo Gallery</h1>
+
+
+<div class="grid">
+    <div class="onclick"  *ngFor="let image of landscapeimgs; let i=index">
+        <div > 
+            <img [src]="image.thumb" (click)="open(i)">
+        </div>
+    </div>
+
+    <div  *ngFor="let image1 of landscapeimgs.slice(10,20);">
+        <div > 
+            <img [src]="image1.thumb">  
+        </div>
+    </div>
+</div>

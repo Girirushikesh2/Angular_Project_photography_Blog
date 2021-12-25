@@ -1,0 +1,86 @@
+
+.navbar .navbar-expand-lg .navbar-light .bg-light{
+    z-index: 100;
+    
+}
+.navbar-light , .navbar-nav .nav-link.active-link{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.navbar-light , .navbar-nav .nav-link.active-link{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.navbar-light , .navbar-nav  .btn {
+    color: rgb(119, 116, 116);
+    font-weight: bold;
+    
+}
+
+
+.navbar-light , .navbar-nav .nav-link.active-link .btn{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.navbar-light , .navbar-nav .nav-link.active-link .btn{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.navbar-light , .navbar-nav .nav-link.active-link .menu{
+    
+    font-weight: bold;
+}
+
+
+.menu {
+    display: inline-block;
+    position: relative;
+   
+
+}
+
+
+
+
+.menu-content{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    
+}
+
+
+
+
+.menu-content a{
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    
+    
+}
+
+.menu-content a:hover{
+    background: #f1f1f1;
+    
+
+}
+
+.menu:hover .menu-content{
+   display: block;
+  
+
+}
+
+
+.menu-content:hover .btn{
+    background: gray;
+    
+}

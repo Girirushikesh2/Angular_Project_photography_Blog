@@ -1,0 +1,27 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let bd of Blogtypes">
+            <div class="Blogbox mt-3 md-3">
+                <img src="{{bd.blogImg}}">
+                <h1>{{bd.blogName}}</h1>
+                
+                <a class="viewbtn" [routerLink]="['/blog',bd.id]">Read more</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <ul class="pagination justify-content-center">
+        <li class="prev page-item"><a class="page-link" routerLink="">Previous</a></li>
+        <li class="page-item"><a class="page-link" routerLink="">1</a></li>
+        <li class="page-item " ><a class="page-link" routerLink="/blog">2</a></li>
+        <li class="page-item "><a class="page-link" href="http://localhost:4200/about">3</a></li>
+        <li class="page-item "><a class="page-link" routerLink="/contact">4</a></li>
+        <li class="page-item "><a class="page-link" routerLink="/users">5</a></li>
+        <li class="page-item "><a class="page-link" routerLink="/ourteam">6</a></li>
+        <li class=" next page-item"><a class="page-link" href="http://localhost:4200/about">Next</a></li>
+    </ul>
+
+</div>

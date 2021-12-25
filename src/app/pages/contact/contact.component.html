@@ -1,0 +1,102 @@
+
+<img  id="imgb" src="https://c4.wallpaperflare.com/wallpaper/947/181/108/polygon-geometric-multicolor-colorful-wallpaper-preview.jpg">
+<div class="container mt-5">
+  
+  <form #userform="ngForm" (ngSubmit)="submitform(userform)" class="content">
+    <h3>Need Help? Contact our Support Team </h3>
+    
+    <div class="row">
+      <p class="mt-2 mb-2 col-6">
+        <label for="fname"></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="fname"  required pattern="^[a-zA-Z]*$" name="fname" #f1=ngModel [(ngModel)]="user.firstname" placeholder="Enter your first name"/>
+      </p>
+    
+      <div *ngIf="!f1?.valid &&(f1?.dirty||f1?.touched)"class="error">
+        <div *ngIf="f1!.errors!['required']">
+          <p class="errMsg">*First Name is required </p> 
+        </div>
+      </div>
+    
+      <p class="mt-2 mb-2  col-6">
+        <label for="lname"></label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="lname" required pattern="^[a-zA-Z]*$" name="lname" #l1=ngModel [(ngModel)]="user.lastname" placeholder="Enter your last name"/>
+      </p> 
+      <div *ngIf="!l1?.valid &&(l1?.dirty||l1?.touched)"class="error">
+        <div *ngIf="l1!.errors!['required']">
+          <p class="errMsg">*Last Name is required</p>
+        </div>
+      </div>
+
+    </div>
+    
+          
+  
+    <p class="mt-2 mb-2 col-lg-12 col-12">
+      <label for="mobile"></label> &nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="tel" id="mobile" required pattern="^[0-9]{10}$" name="mobile" #mo=ngModel [(ngModel)]="user.mobile" placeholder="Enter your mobile no"/>
+    </p> 
+
+    <div *ngIf="!mo?.valid &&(mo?.dirty||mo?.touched)"class="error">
+      <div *ngIf="mo!.errors!['required']">
+        <p class="errMsg">*mobile no is required</p>
+      </div>
+    </div>
+
+    <p  class="mt-2 mb-2 col-lg-12 col-12">
+      <label for="email"></label> &nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="email" id="email"  required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" #em=ngModel [(ngModel)]="user.email" placeholder="Enter your email"/> 
+    </p> 
+    <div *ngIf="!em?.valid &&(em?.dirty||em?.touched)"class="error">
+      <div *ngIf="em!.errors!['required']">
+        <p class="errMsg">*email is required</p>
+      </div>
+    </div>
+  
+  
+  
+    <p  class="mt-2 mb-2 col-lg-12 col-12">
+      <label for="message"></label> &nbsp;&nbsp;&nbsp;&nbsp;
+      <textarea type="text" id="message" minlength="10" maxlength="100" cols="35" rows="5" required pattern="^[a-zA-Z .,]*$" name="message" #mg=ngModel [(ngModel)]="user.message" placeholder="Enter your message"> </textarea>
+    </p> 
+    <div *ngIf="!mg?.valid &&(mg?.dirty||mg?.touched)"class="error">
+      <div *ngIf="mg!.errors!['required']">
+        <p class="errMsg">*message is required</p>
+      </div>
+    </div>
+    
+    
+      <input class="button1"  type="submit" [disabled]="!userform.valid"/>
+   
+  </form>
+</div>
+
+<div class="row mapad">
+
+  <div class="map1 col-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238540.67412440825!2d77.6216566189112!3d20.904350870258355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a4a67774bc15%3A0x3c7b3f78ca4f9635!2sAmravati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1640067902874!5m2!1sen!2sin" width="556.5" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <div class="address col-5" >
+    <h4>Address</h4>
+    <p>255 City Center, near Amravati Engineering College, Shegaon-Kathora road, Amravati-444604</p>
+  
+    <h4> Phone</h4>
+    <p>+91-9033047777</p>
+  
+    <h4>Hours</h4>
+    <p>Monday-Friday: 9am-10pm, Saturday-Sunday: 9am-12pm</p><br><br>
+  </div>
+
+</div>
+<div>
+  <ul class="pagination justify-content-center">
+      <li class="prev page-item"><a class="page-link" routerLink="/about">Previous</a></li>
+      <li class="page-item"><a class="page-link" routerLink="">1</a></li>
+      <li class="page-item " ><a class="page-link" routerLink="/blog">2</a></li>
+      <li class="page-item "><a class="page-link" href="http://localhost:4200/about">3</a></li>
+      <li class="page-item "><a class="page-link" routerLink="/contact">4</a></li>
+      <li class="page-item "><a class="page-link" routerLink="/users">5</a></li>
+      <li class="page-item "><a class="page-link" routerLink="/ourteam">6</a></li>
+      <li class=" next page-item"><a class="page-link" routerLink="/users">Next</a></li>
+  </ul>
+
+</div>
